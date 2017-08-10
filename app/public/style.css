@@ -1,0 +1,19 @@
+body {
+
+	font-family: 'Oxygen', sans-serif;
+	background-image: url("../public/cat.jpg");
+	background-size: cover;
+	color: white;
+}
+
+.jumbotron {
+
+	background-color: #00bfff;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+a {
+
+	color: green;
+}
