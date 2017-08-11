@@ -1,7 +1,7 @@
 body {
 
 	font-family: 'Oxygen', sans-serif;
-	background-image: url("../public/cat.jpg");
+	background-image: url("cat.jpg");
 	background-size: cover;
 	color: white;
 }
@@ -16,4 +16,29 @@ body {
 a {
 
 	color: green;
+}
+
+.questionBox {
+
+	background-color: #00bfff;
+	margin: 20px 0 20px 0;
+	padding: 20px;
+}
+
+input {
+
+	width: 50%;
+}
+
+button, input, select, textarea {
+
+	color: black;
+}
+
+.btnStyle {
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }

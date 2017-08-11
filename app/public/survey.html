@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" type= "text/css" href="../public/reset.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
+	<link rel="stylesheet" type= "text/css" href="style.css">
+
+</head>
+
+<body>
+
+	<div class= "container">
+		<div class="col-lg-2"></div>
+		<div class= "col-lg-8 questionBox">
+
+			<h3><strong>About you</strong></h3>
+
+			<input id="name" type="text" placeholder= "Name" class="chosen-select" required>
+			<label class='active' for="name">(required)</label>
+			<br><br>
+			<input id="photo" type="text" placeholder="Link to a photo" class="chosen-select" required>
+			<label class='active' for="name">(required)</label>
+
+
+			<h3><strong>Question 1</strong></h3>
+			<h4>You are very spontainious and adventurous.</h4>
+			<select data-placeholder="" class="chosen-select" id="question1">
+				<option value="" class= "optionColor">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+			<br></br>
+
+<!-- 			<h3><strong>Question 2</strong></h3>
+			<h4>You like to be methodical and have your day planned out.</h4>
+			<select data-placeholder="" class="chosen-select" id="question1">
+				<option value="" class= "optionColor">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+			<br></br>
+
+			<h3><strong>Question 3</strong></h3>
+			<h4>If you were Rose, you'd never let go of Jack. #titanic4ever</h4>
+			<select data-placeholder="" class="chosen-select" id="question1">
+				<option value="" class= "optionColor">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+			<br></br>
+
+			<h3><strong>Question 4</strong></h3>
+			<h4>You like long walks on the beach.</h4>
+			<select data-placeholder="" class="chosen-select" id="question1">
+				<option value="" class= "optionColor">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+			<br></br>
+
+			<h3><strong>Question 5</strong></h3>
+			<h4>You like Pina Coladas and getting caught in the rain.</h4>
+			<select data-placeholder="" class="chosen-select" id="question1">
+				<option value="" class= "optionColor">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+			<br></br>
+
+			<h3><strong>Question 6</strong></h3>
+			<h4>You are more of a dog person (cats r evil).</h4>
+			<select data-placeholder="" class="chosen-select" id="question1">
+				<option value="" class= "optionColor">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+			<br></br>
+
+			<h3><strong>Question 7</strong></h3>
+			<h4>You would love to shark dive with Great Whites in South Africa.</h4>
+			<select data-placeholder="" class="chosen-select" id="question1">
+				<option value="" class= "optionColor">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+			<br></br>
+
+			<h3><strong>Question 8</strong></h3>
+			<h4>You would rather jump off a cliff than touch a tarantula.</h4>
+			<select data-placeholder="" class="chosen-select" id="question1">
+				<option value="" class= "optionColor">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+			<br></br>
+
+			<h3><strong>Question 9</strong></h3>
+			<h4>You don't like watching sports (Sports ball, anyone?).</h4>
+			<select data-placeholder="" class="chosen-select" id="question1">
+				<option value="" class= "optionColor">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+			<br></br>
+
+			<h3><strong>Question 10</strong></h3>
+			<h4>Mac and cheese is your favorite food, ever.</h4>
+			<select data-placeholder="" class="chosen-select" id="question1">
+				<option value="" class= "optionColor">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select> -->
+			<br></br><br>
+
+
+
+			<button type="submit" class="btn btn-success btn-lg btnStyle" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>BFF ME!</button>
+
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div id="resultsModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title"><strong>Best Match</strong></h2>
+				</div>
+				<div class="modal-body">
+					<h2 id="matchName"></h2>
+					<img id="matchImg" src="#" alt="">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+
+
+	$("#submit").on("click", function(){
+
+		var friends = [];
+		var allFilledOut = true;
+
+
+		$(".chosen-select").each(function(i, value){
+
+			if ($(value).val() == "") {
+
+				alert("Please fill out all questions!");
+				allFilledOut = false;
+			}
+
+			else {
+
+				friends.push($(value).val());
+
+			}
+
+		})
+
+		console.log(friends);
+
+if (allFilledOut == true) {
+
+	$.ajax({type: "POST", data: {friends}, url: "/friendInfo", 
+
+		success: function(response){
+
+			console.log("RESPONSE");
+
+		}, 
+
+		error: function(err){
+
+			console.log("ERROR!");
+
+
+		},
+
+		})
+}
+		
+
+	
+
+
+		})
+
+
+
+
+
+
+	</script>
+
+
+</body>
+</html>
