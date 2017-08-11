@@ -20,6 +20,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "init": "^0.1.2"
+    "init": "^0.1.2",
+    "jquery-modal": "^0.8.2"
   }
 }

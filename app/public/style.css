@@ -42,3 +42,8 @@ button, input, select, textarea {
 	margin-right: auto;
 	width: 50%;
 }
+
+.modal-content {
+
+	color: black;
+}
