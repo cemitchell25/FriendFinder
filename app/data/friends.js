@@ -81,6 +81,27 @@ var friendList = [
 
 	]
 
+},
+
+{
+
+	name: 'Ron Burgundy',
+	Photo: 'https://goo.gl/Xbnpn4',
+	scores: [
+
+	  "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "3",
+      "3",
+      "3"
+
+	]
+
 }
 
 

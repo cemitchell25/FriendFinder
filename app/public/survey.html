@@ -59,7 +59,7 @@
 			</select>
 			<br></br>
 
-<!-- 			<h3><strong>Question 3</strong></h3>
+			<h3><strong>Question 3</strong></h3>
 			<h4>If you were Rose, you'd never let go of Jack. #titanic4ever</h4>
 			<select data-placeholder="" class="chosen-select" id="question03">
 				<option value="" class= "optionColor">Select an Option</option>
@@ -152,7 +152,7 @@
 				<option value="3">3</option>
 				<option value="4">4</option>
 				<option value="5">5 (Strongly Agree)</option>
-			</select> -->
+			</select>
 			<br></br><br>
 
 
@@ -166,7 +166,7 @@
 	<div class="col-lg-2"></div>
 		<p>
 			<a href= "/api/friends">API Friends List</a>
-			| 
+			|
 			<a href= "www.github.com">GitHub Repo</a>
 		</p>
 	</div>
@@ -196,7 +196,7 @@
 
 
 	<script type="text/javascript">
-		
+
 
 
     $("#submit").on("click", function(event) {
@@ -215,9 +215,9 @@
 		  })
 		  return isValid;
 		};
-		
 
-  
+
+
       event.preventDefault();
       if (validateForm() == true){
 
@@ -225,25 +225,22 @@
         Name: $("#name").val().trim(),
         Photo: $("#photo").val().trim(),
         scores: [
-       	$('#question01').val().trim(), 
-        $('#question02').val().trim(), 
-        // $('#question03').val().trim(), 
-        // $('#question04').val().trim(), 
-        // $('#question05').val().trim(), 
-        // $('#question06').val().trim(), 
-        // $('#question07').val().trim(), 
-        // $('#question08').val().trim(), 
-        // $('#question09').val().trim(), 
-        // $('#question10').val().trim()
+       	$('#question01').val().trim(),
+        $('#question02').val().trim(),
+        $('#question03').val().trim(),
+        $('#question04').val().trim(),
+        $('#question05').val().trim(),
+        $('#question06').val().trim(),
+        $('#question07').val().trim(),
+        $('#question08').val().trim(),
+        $('#question09').val().trim(),
+        $('#question10').val().trim()
         ]
       };
       console.log(newFriend);
 
 		$.post('/api/friends', newFriend, function(data) {
 			console.log(data);
-			// $("#bestFriendName").text(data.name);
-			// $("#bestFriendImg").attr("src", data.photo);
-			// $("#bestFriendModal").modal("show");
 
 				$("#matchName").text(data.name);
 	    		$('#matchImg').attr("src", data.Photo);
@@ -259,10 +256,10 @@
 
       	alert("Please fill out all questions!");
       }
-   
+
 		return false;
 	});
- 
+
 
 
 
